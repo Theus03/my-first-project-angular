@@ -8,6 +8,6 @@ export class EnviaFormularioService {
   constructor() { }
 
   enviarInformacaoParaBackEnd(info: string){
-    console.log("enviado para o backend...")
+    console.log(info)
   }
 }
