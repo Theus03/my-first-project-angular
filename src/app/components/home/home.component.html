@@ -1,0 +1,23 @@
+<p>Hello World {{ name }}</p>
+
+<button (click)="submit($event)">Clique aqui</button>
+
+<!-- Condições das versões antigas do angular -->
+<!-- <h1 *ngIf="deveMostrarTitulo">meu título</h1> -->
+
+
+<!-- Condições das novas versões do angular: -->
+@if(deveMostrarTitulo) {
+    <h1>Meu Título</h1>
+} @else if(!deveMostrarTitulo && name == "a"){
+    <h1>Matheus</h1>
+} @else {
+    <h1>Não foi true</h1>
+}
+
+@for(item of listItems; track item) {
+    <p>{{item}}</p>
+}
+
+<!-- Condições das versões antigas do angular -->
+<!-- <p *ngFor="let item of listItems">{{item}}</p> -->
